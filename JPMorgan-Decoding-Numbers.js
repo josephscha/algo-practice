@@ -22,7 +22,14 @@
 // 4. The digit sequence would be formed by only using digits from 0-9.
 
 function decodeMessage (input){
-
+    count = 0
+    splitInt = [...input.toString()]
+    if(input <= 10 && input > 0){
+        count = 1
+    }
+    if(input >= 11){
+        count = splitInt.length
+    }
 }
 
 let testInput = 12
